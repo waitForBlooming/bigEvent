@@ -62,6 +62,12 @@ body {
     z-index: 999;
 }
 
+@media screen and (max-width: 768px) {
+    .loginAndRegBox {
+        width: 300px;
+    }
+}
+
 .title-box h1 {
     font-family: "SimSun", "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
     text-align: center;
