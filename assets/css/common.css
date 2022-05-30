@@ -1,0 +1,45 @@
+/* 菜单等hover */
+.layui-nav-tree .layui-nav-child dd.layui-this,
+.layui-nav-tree .layui-nav-child dd.layui-this a,
+.layui-nav-tree .layui-this,
+.layui-nav-tree .layui-this>a,
+.layui-nav-tree .layui-this>a:hover {
+    background-color: #1E9FFF;
+}
+
+/* 按钮 */
+.layui-btn {
+    background-color: #1E9FFF;
+}
+
+.layui-btn-primary {
+    background-color: #fff;
+}
+
+.layui-btn-danger {
+    background-color: #FF5722;
+}
+
+/* 分页 */
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #1E9FFF;
+}
+
+/* 个人中心hover时的动态条 */
+.layui-nav .layui-this:after,
+.layui-nav-bar,
+.layui-nav-tree .layui-nav-itemed:after {
+    background-color: #1E9FFF;
+}
+
+/* 个人中心点击菜单栏时的背景颜色 */
+.layui-nav .layui-nav-child dd.layui-this a,
+.layui-nav-child dd.layui-this {
+    background-color: #1E9FFF;
+}
+
+
+/* 左侧菜单栏hover时的动态条 */
+.layui-nav-tree .layui-nav-bar {
+    background-color: #1E9FFF;
+}

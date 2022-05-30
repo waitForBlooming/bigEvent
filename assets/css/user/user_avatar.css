@@ -15,7 +15,7 @@ body {
 
 @media screen and (max-width:768px) {
     .layui-form {
-        width: 320px;
+        width: 100%;
     }
 }
 

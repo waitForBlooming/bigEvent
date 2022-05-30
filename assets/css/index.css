@@ -31,7 +31,8 @@ iframe {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: rgb(0, 150, 136);
+    /* background-color: rgb(0, 150, 136); */
+    background-color: #1E9FFF;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;

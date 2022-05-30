@@ -53,7 +53,7 @@ body {
 /* 登录模块 */
 .loginAndRegBox {
     width: 400px;
-    height: 310px;
+    /* height: 310px; */
     position: absolute;
     top: 50%;
     left: 50%;

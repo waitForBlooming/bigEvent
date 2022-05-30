@@ -1,0 +1,42 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #F0F2F5;
+}
+
+#art_preview {
+    background: transparent;
+    border-color: transparent;
+    box-shadow: none;
+    color: #317fc7;
+}
+
+.layui-layer-content h1 {
+    text-align: center;
+}
+
+.layui-layer-content .user_info {
+    padding-top: 10px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+
+.layui-layer-content .user_info span {
+    padding-right: 10px;
+}
+
+.layui-layer-content main {
+    padding: 20px 10px;
+    text-indent: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .layui-layer-content img {
+        width: 90%;
+    }
+}

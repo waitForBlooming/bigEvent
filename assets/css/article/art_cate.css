@@ -1,0 +1,44 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #F0F2F5;
+}
+
+.layui-form {
+    width: 500px;
+}
+
+@media screen and (max-width:768px) {
+    .layui-form {
+        width: 100%;
+    }
+}
+
+.layui-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form-add,
+#form-edit {
+    padding-top: 20px;
+}
+
+#form-add [type=text],
+#form-edit [type=text] {
+    width: 90%;
+}
+
+@media screen and (max-width:768px) {
+
+    #form-add [type=text],
+    #form-edit [type=text] {
+        width: 98%;
+    }
+}

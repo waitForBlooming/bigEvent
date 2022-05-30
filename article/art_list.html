@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/css/common.css">
+    <link rel="stylesheet" href="/assets/css/article/art_list.css">
+</head>
+
+<body>
+    <!-- 卡片区域 -->
+    <div class="layui-card">
+        <div class="layui-card-header">文章列表</div>
+        <div class="layui-card-body">
+            <!-- 筛选区域 -->
+            <form class="layui-form" id="form-search">
+                <div class="layui-form-item layui-inline">
+                    <select name="cate_id">
+
+                    </select>
+                </div>
+                <div class="layui-form-item layui-inline">
+                    <select name="state">
+                        <option value="">所有状态</option>
+                        <option value="已发布">已发布</option>
+                        <option value="草稿">草稿</option>
+                    </select>
+                </div>
+                <div class="layui-form-item layui-inline">
+                    <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                </div>
+            </form>
+
+            <!-- 列表区域 -->
+            <!-- 发请求，拿到文章列表的数据，调用模板引擎渲染表格结构 -->
+            <table class="layui-table">
+                <colgroup>
+                    <col>
+                    <col width="15%">
+                    <col width="20%">
+                    <col width="15%">
+                    <col width="10%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>文章标题</th>
+                        <th>分类</th>
+                        <th>发表时间</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+            <!-- 分页区域 -->
+            <div id="pageBox"></div>
+        </div>
+    </div>
+
+    <!-- 筛选区域的模板引擎 -->
+    <script type="text/html" id="tpl-cate">
+        <option value="">所有分类</option>
+        {{each data}}
+        <option value="{{$value.Id}}">{{$value.name}}</option>
+        {{/each}}
+    </script>
+    <!-- 列表数据的模板引擎 -->
+    <script type="text/html" id="tpl-table">
+        {{each data}}
+            <tr>
+                <td>
+                    <button type="button" data-id="{{$value.Id}}" id="art_preview">
+                        {{$value.title}}
+                    </button>
+                </td>
+                <td>{{$value.cate_name}}</td>
+                <td>{{$value.pub_date|dataFormat}}</td>
+                <td>{{$value.state}}</td>
+                <td>
+                    <button type="button" class="layui-btn layui-btn-danger layui-btn-xs btn-delete" data-id="{{$value.Id}}">删除</button>
+                </td>
+            </tr>
+        {{/each}}
+    </script>
+
+
+    <!-- 预览区域弹出层的模板引擎 -->
+    <script type="text/html" id="dialog-preview">
+    <div class="layui-card">
+        <h1>{{@data.title}}</h1>
+        <div class="layui-card-body">
+            <div class="user_info">
+                <span>作者ID:{{@data.author_id}}</span>
+                <span>发布时间: {{@data.pub_date|dataFormat}}</span>
+                <span>所属分类:{{@data.cate_id}}</span>
+                <span>状态:{{@data.state}}</span>
+            </div>
+            <main>
+                {{@data.content}}
+                <img src="http://www.liulongbin.top:3007{{@data.cover_img}}" alt="">
+            </main>
+            
+        </div>
+    </div>
+</script>
+
+
+
+    <!-- 导入第三方的JS插件 -->
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/js/baseAPI.js"></script>
+    <script src="/assets/lib/template-web.js"></script>
+    <!-- 导入自己的JS脚本 -->
+    <script src="/assets/js/article/art_list.js"></script>
+</body>
+
+</html>
