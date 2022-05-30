@@ -18,9 +18,9 @@ iframe {
     height: 100%;
 }
 
-.layui-body {
+/* .layui-body {
     overflow: hidden;
-}
+} */
 
 .layui-nav-img {
     width: 40px;
@@ -45,4 +45,11 @@ iframe {
 
 #welcome {
     font-size: 12px;
+}
+
+/* 移动端侧边栏 */
+.layui-nav-tree li:first-child {
+    padding: 5px;
+    padding-left: 60px;
+    margin: auto;
 }

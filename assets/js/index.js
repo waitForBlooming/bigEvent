@@ -54,7 +54,7 @@ function renderAvatar(user) {
     // 1. 获取用户的名称
     var name = user.nickname || user.username
     // 2. 设置欢迎的文本
-    $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
+    $('.welcome').html('欢迎&nbsp;&nbsp;' + name)
     // 3. 按需渲染用户的头像
     if (user.user_pic !== null) {
         // 3.1 渲染图片头像

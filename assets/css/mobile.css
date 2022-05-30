@@ -1,0 +1,80 @@
+@media screen and (min-width:767px) {
+    .layui-header .layui-logo {
+        display: block !important;
+    }
+
+    .layui-header .layui-nav-tree {
+        display: none !important;
+    }
+
+    .left_navTree {
+        display: none;
+    }
+}
+
+
+/* 左侧垂直菜单栏 */
+.left_navTree {
+    position: relative;
+    left: -260px;
+    transition: all .3s;
+}
+
+.left_navTreeClick {
+    left: 0;
+}
+
+.left_navTree .menu {
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    width: 40px;
+    left: 260px;
+    height: 40px;
+    background-color: #23262E;
+    border-top: 2px solid #666;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+    box-shadow: 1px 1px 3px #999;
+}
+
+.left_navTree .menu i {
+    font-size: 24px;
+    color: #fff;
+}
+
+.left_navCover {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    background: #23262E;
+    opacity: 0.5;
+}
+
+.left_navTree ul {
+    position: absolute;
+    width: 260px;
+    max-height: calc(100vh);
+    height: calc(100vh);
+    left: 0;
+    top: 0px;
+    bottom: 0;
+    overflow-y: scroll;
+    background-color: #23262E !important;
+}
+
+.left_navTree .layui-nav-item {
+    background-color: #23262E !important;
+}
+
+.layui-nav-tree .layui-nav-item a:hover {
+    background-color: #23262E !important;
+}
+
+.layui-layout-right {
+    z-index: -1;
+}

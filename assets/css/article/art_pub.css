@@ -37,3 +37,63 @@ body {
     margin-bottom: 20px;
     overflow: hidden;
 }
+
+/* @media screen and (max-width:425px) {
+    .layui-card-body {
+        padding: 10px 0px;
+    }
+
+    .layui-form-label {
+        padding: 9px 0px;
+        width: 60px;
+    }
+
+    .layui-input,
+    .layui-textarea {
+        padding-left: 0px;
+    }
+
+    .layui-input-block {
+        margin-left: 0px;
+    }
+} */
+
+/* @media screen and (max-width:766px) {
+    .layui-card-body {
+        padding: 10px 0px;
+    }
+
+    .layui-form-label {
+        padding: 9px 0px;
+        width: 60px;
+    }
+
+    .layui-input,
+    .layui-textarea {
+        padding-left: 0px;
+    }
+
+    .layui-input-block {
+        margin-left: 0px;
+    }
+
+    .cover-left {
+        width: 150px;
+        height: 130px;
+        overflow: hidden;
+        margin-right: 5px;
+    }
+} */
+@media screen and (max-width:766px) {
+    body {
+        width: 766px;
+    }
+
+    .layui-input-block {
+        margin-left: 0px;
+    }
+
+    .layui-form-select .layui-edge {
+        top: 75%;
+    }
+}

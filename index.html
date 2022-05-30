@@ -13,6 +13,23 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <!-- 导入第三方图标库 -->
     <link rel="stylesheet" href="./assets/fonts/iconfont.css">
+    <!-- 移动端样式 -->
+    <link rel="stylesheet" href="/assets/css/mobile.css">
+    <style>
+        /* 移动端 */
+        @media screen and (max-width: 767px) {
+
+            .layui-layout-admin .layui-layout-left,
+            .layui-layout-admin .layui-body,
+            .layui-layout-admin .layui-footer {
+                left: 0;
+            }
+
+            .layui-layout-admin .layui-side {
+                left: -300px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -23,9 +40,49 @@
                     <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
                         class="layui-nav-img">
                     <span class="text-avatar">A</span>
-                    <span id="welcome">欢迎：***</span>
+                    <span class="welcome">欢迎：***</span>
                 </div>
             </div>
+
+            <!-- 垂直/侧边导航 -->
+            <div class="left_navTree">
+                <div class="left_navCover"></div>
+                <div class="menu"><i class="layui-icon layui-icon-spread-left"></i> </div>
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li>
+                        <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg"
+                            class="layui-nav-img">
+                        <span class="text-avatar">A</span>
+                        <span class="welcome">欢迎：***</span>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="/home/dashboard.html" target="fm">首页</a>
+                    </li>
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a href="javascript:;">文章管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/article/article_cate.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>文章分类</a></dd>
+                            <dd><a href="/article/art_list.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>文章列表</a></dd>
+                            <dd><a href="/article/art_pub.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>发布文章</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-username"></i>个人中心</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/user/user_info.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>基本资料</a></dd>
+                            <dd><a href="/user/user_avatar.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>更换头像</a></dd>
+                            <dd><a href="/user/user_pwd.html" target="fm"><i
+                                        class="layui-icon layui-icon-app"></i>重置密码</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+
             <!-- 头部区域（可配合layui 已有的水平导航） -->
             <ul class="layui-nav layui-layout-right">
                 <li class="layui-nav-item layui-hide layui-show-md-inline-block">
@@ -88,6 +145,7 @@
             <!-- 底部固定区域 -->
             ©microhubble.com-繁星后台管理系统
         </div>
+
     </div>
     <!-- 导入layui的JS文件 -->
     <script src="/assets/lib/layui/layui.all.js"></script>
@@ -97,6 +155,8 @@
     <script src="/assets/js/baseAPI.js"></script>
     <!-- 导入自己的 js 文件 -->
     <script src="/assets/js/index.js"></script>
+    <!-- 导入自己的 移动端mobile.js 文件 -->
+    <script src="/assets/js/mobile.js"></script>
 </body>
 
 </html>

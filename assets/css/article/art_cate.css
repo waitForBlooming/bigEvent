@@ -42,3 +42,9 @@ body {
         width: 98%;
     }
 }
+
+@media screen and (max-width:407px) {
+    .layui-btn+.layui-btn {
+        margin-left: 0px;
+    }
+}

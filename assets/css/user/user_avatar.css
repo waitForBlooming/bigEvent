@@ -39,6 +39,8 @@ body {
     overflow: hidden;
 }
 
+
+
 /* 设置第一个预览区域的样式 */
 .w100 {
     width: 100px;
@@ -82,4 +84,55 @@ body {
 
 #file {
     display: none;
+}
+
+@media screen and (max-width:766px) {
+    .cropper-box {
+        width: 200px;
+        height: 200px;
+    }
+
+    .preview-box {
+        align-items: flex-start;
+        margin-left: 30px;
+    }
+
+    .row2 {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .layui-card-body {
+        width: 100%;
+    }
+
+    .cropper-box {
+        width: 200px;
+        height: 200px;
+    }
+
+    .preview-box {
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+
+    .row2 {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .layui-card-body {
+        padding: 15px 0;
+    }
+
+    .cropper-box {
+        width: 190px;
+        height: 190px;
+    }
+
+    .preview-box {
+        margin-left: 0px;
+    }
 }
