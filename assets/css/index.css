@@ -48,7 +48,7 @@ iframe {
 }
 
 /* 移动端侧边栏 */
-.layui-nav-tree li:first-child {
+.layui-header .layui-nav-tree li:first-child {
     padding: 5px;
     padding-left: 60px;
     margin: auto;
