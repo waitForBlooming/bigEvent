@@ -19,12 +19,23 @@ $(function () {
     // 为添加类别按钮绑定点击事件
     var indexAdd = null
     $("#btnAddCate").on("click", function () {
-        indexAdd = layer.open({//开启弹出层的时候拿到一个返回值赋值给索引变量（以便后面根据索引关掉弹出层）
-            type: 1,
-            area: ['500px', '250px'],
-            title: '添加文章分类',
-            content: $("#dialog-add").html()
-        })
+        var iw = window.innerWidth;
+        if (iw > 766) {
+            indexAdd = layer.open({//开启弹出层的时候拿到一个返回值赋值给索引变量（以便后面根据索引关掉弹出层）
+                type: 1,
+                area: ['500px', '250px'],
+                title: '添加文章分类',
+                content: $("#dialog-add").html()
+            })
+        } else {
+            indexAdd = layer.open({//开启弹出层的时候拿到一个返回值赋值给索引变量（以便后面根据索引关掉弹出层）
+                type: 1,
+                area: ['90%', ''],
+                title: '添加文章分类',
+                content: $("#dialog-add").html()
+            })
+        }
+
     })
 
     // 通过事件代理的方式，为form-add表单绑定submit事件
@@ -53,12 +64,23 @@ $(function () {
     // 故而需通过代理的形式,为btn-edit按钮绑定点击事件
     var indexEdit = null
     $("tbody").on('click', '.btn-edit', function () {
-        indexEdit = layer.open({//开启弹出层的时候拿到一个返回值赋值给索引变量indexEdit（以便后面根据索引关掉弹出层）
-            type: 1,
-            area: ['500px', '250px'],
-            title: '修改文章分类',
-            content: $("#dialog-edit").html()
-        })
+        var iw = window.innerWidth;
+        if (iw > 766) {
+            indexEdit = layer.open({//开启弹出层的时候拿到一个返回值赋值给索引变量indexEdit（以便后面根据索引关掉弹出层）
+                type: 1,
+                area: ['500px', '250px'],
+                title: '修改文章分类',
+                content: $("#dialog-edit").html()
+            })
+        } else {
+            indexEdit = layer.open({//开启弹出层的时候拿到一个返回值赋值给索引变量indexEdit（以便后面根据索引关掉弹出层）
+                type: 1,
+                area: ['90%', ''],
+                title: '修改文章分类',
+                content: $("#dialog-edit").html()
+            })
+        }
+
 
         // 只要触发了编辑按钮的点击事件，就可以获取自定义属性对应的值
         var id = $(this).attr('data-id');
