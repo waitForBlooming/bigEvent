@@ -17,7 +17,7 @@
 
 数据可视化：[echarts](https://echarts.apache.org/examples/zh/index.html)
 
-富文本：**[cropperjs](https://github.com/fengyuanchen/cropperjs)**
+富文本：**[tinymce](https://github.com/tinymce/tinymce)**
 
 图片裁剪工具：[cropperjs](https://github.com/fengyuanchen/cropperjs)
 
