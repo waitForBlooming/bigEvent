@@ -43,8 +43,4 @@
 
 ### 移动端
 
-<img src="README.assets/image-20220609202950383.png" alt="image-20220609202950383" style="max-width: 50%;" />
-
-<img src="README.assets/814908CEB3679FD176835B07B8DB5C56.jpg" alt="img" style="max-width: 50%;"  />
-
-<img src="README.assets/F4232F4B7DC55D71D37441D976227376.jpg" alt="img" style="max-width: 50%;" />
+![image-20220609205155338](README.assets/image-20220609205155338.png)
