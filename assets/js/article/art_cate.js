@@ -50,7 +50,7 @@ $(function () {
             data: $(this).serialize(),
             success: function (res) {
                 if (res.status !== 0) {
-                    return layer.msg('新增分类失败！')
+                    return layer.msg(res.message)
                 }
                 initArtCateList()//重新渲染表格
                 layer.msg('新增分类成功！')

@@ -8,6 +8,8 @@
     <title>登录</title>
     <!-- 导入layui的样式表 -->
     <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+    <!-- 导入第三方图标库 -->
+    <link rel="stylesheet" href="./assets/fonts/iconfont.css">
     <!-- 导入自己的样式表 -->
     <link rel="stylesheet" href="./assets/css/login.css">
 
@@ -33,7 +35,8 @@
                         <i class="layui-icon layui-icon-password"></i>
                         <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码"
                             autocomplete="off" class="layui-input">
-
+                        <i class="iconfont icon-biyanjing"></i>
+                        <i class="iconfont icon-icon-eye-open pwdStatus"></i>
                     </div>
                     <!-- 登录按钮 -->
                     <div class="layui-form-item">
@@ -66,6 +69,8 @@
                         <i class="layui-icon layui-icon-password"></i>
                         <input type="password" name="password" required lay-verify="required|pwd" placeholder="请输入密码"
                             autocomplete="off" class="layui-input">
+                        <i class="iconfont icon-biyanjing"></i>
+                        <i class="iconfont icon-icon-eye-open pwdStatus"></i>
 
                     </div>
                     <!-- 密码确认框 -->
@@ -73,6 +78,8 @@
                         <i class="layui-icon layui-icon-password"></i>
                         <input type="password" name="repassword" required lay-verify="required|pwd|repwd"
                             placeholder="再次确认密码" autocomplete="off" class="layui-input">
+                        <i class="iconfont icon-biyanjing"></i>
+                        <i class="iconfont icon-icon-eye-open pwdStatus"></i>
 
                     </div>
                     <!-- 注册按钮 -->

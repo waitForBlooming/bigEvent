@@ -79,4 +79,44 @@ $(function () {
             }
         })
     })
+
+
+
+    //自己写的--添加登录页密码框的显示/隐藏功能
+    let flag = 0;
+    $("#form_login .iconfont").on("click", function () {
+        $(this).toggleClass("pwdStatus").siblings(".iconfont").toggleClass("pwdStatus")
+        if (flag == 0) {
+            $(this).siblings("input[name='password']").attr("type", "text")
+            flag = 1
+        } else {
+            $(this).siblings("input[name='password']").attr("type", "password")
+            flag = 0
+        }
+    })
+    //自己写的--添加注册页密码框的显示/隐藏功能
+    let flag0 = 0;
+    $("#form_reg .layui-form-item:nth-child(2) .iconfont").on("click", function () {
+        $(this).toggleClass("pwdStatus").siblings(".iconfont").toggleClass("pwdStatus")
+        if (flag0 == 0) {
+            $(this).siblings("input[name='password']").attr("type", "text")
+            flag0 = 1
+        } else {
+            $(this).siblings("input[name='password']").attr("type", "password")
+            flag0 = 0
+        }
+    })
+    //自己写的--添加注册页密码框的显示/隐藏功能
+    let flag1 = 0;
+    $("#form_reg .layui-form-item:nth-child(3) .iconfont").on("click", function () {
+        $(this).toggleClass("pwdStatus").siblings(".iconfont").toggleClass("pwdStatus")
+        if (flag1 == 0) {
+            $(this).siblings("input[name='repassword']").attr("type", "text")
+            flag1 = 1
+        } else {
+            $(this).siblings("input[name='repassword']").attr("type", "password")
+            flag1 = 0
+        }
+    })
+
 })

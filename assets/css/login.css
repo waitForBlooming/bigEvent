@@ -106,3 +106,28 @@ body {
 .layui-input {
     padding-left: 30px;
 }
+
+/* 密码框睁眼/闭眼icon */
+.icon-biyanjing {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.icon-icon-eye-open {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.pwdStatus {
+    display: none;
+}
+
+.pwdStatus1 {
+    display: none;
+}
+
+.pwdStatus2 {
+    display: none;
+}
